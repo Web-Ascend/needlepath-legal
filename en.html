@@ -50,11 +50,17 @@
 <p class="lang"><a href="index.html">Deutsch</a> · English</p>
 
 <h1>Privacy Policy – Needlepath</h1>
-<p class="stand">Last updated: 2 September 2026</p>
+<p class="stand">Last updated: 12 September 2026</p>
 
 <p>This privacy policy explains which data is processed, and for what purpose, when you use the mobile application "Needlepath" (the "app") and when you visit this information page. This is a translation of the German privacy policy provided for convenience; in case of discrepancies, the <a href="index.html">German version</a> prevails.</p>
 
-<p>The short version first: Needlepath is an offline puzzle game. The app requires no account, shows no ads, contains no analytics or tracking services and operates no server infrastructure of its own. Personal data is processed in exactly one, optional case: cloud save via Google Play Games (section 4).</p>
+<p>The short version first: Needlepath is a puzzle game that can be played entirely offline. The app requires no account, contains no analytics or tracking services and operates no server infrastructure of its own. Data leaves the device in three cases only, each of which you trigger yourself:</p>
+<ul>
+  <li><strong>cloud save</strong> via Google Play Games, if a Play Games profile is set up on the device (section 4);</li>
+  <li>a <strong>rewarded ad</strong> that you explicitly request in order to get a hint earlier (section 7);</li>
+  <li>a <strong>purchase</strong> in the game, handled by Google Play (section 8).</li>
+</ul>
+<p>Use none of them and nothing is transmitted. There is no advertising that appears on its own: no banners, no ad on launch, none between levels.</p>
 
 <h2>1. Controller and contact</h2>
 <p>The controller responsible for data processing in connection with the app and this website is:</p>
@@ -69,44 +75,70 @@ Germany</p>
 <p>The legal basis for this processing is our legitimate interest in providing this information reliably and securely (Art. 6(1)(f) GDPR). Processing may take place in the USA; GitHub, Inc. is certified under the EU-U.S. Data Privacy Framework, for which an adequacy decision of the EU Commission under Art. 45 GDPR is in place. For more information, see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.</p>
 
 <h2>3. Data stored locally</h2>
-<p>Your game progress – the highest unlocked level, your score, and per level the best result, stars, gems and the number of tries and restarts – is stored locally on your device only, as is the setting for sound and vibration. It leaves the device only through the channels described in sections 4 and 5.</p>
+<p>Your game progress – the highest unlocked level, your score, and per level the best result, stars, gems and the number of tries and restarts – is stored locally on your device only, as are the settings for sound, vibration and colour theme. It leaves the device only through the channels described in sections 4 and 5.</p>
+<p>Also stored locally, and only locally, is which of the products named in section 8 you own – solely their identifiers ("pack_werkstatt", "supporter"), no receipts, no order numbers and no payment data.</p>
 <p>You can delete the local game progress at any time: in the Android settings under <em>Apps → Needlepath → Storage → Clear data</em>, or by uninstalling the app.</p>
 
-<h2>4. Optional cloud save via Google Play Games</h2>
+<h2>4. Optional cloud save and achievements via Google Play Games</h2>
 <p>If a Google Play Games profile is set up on your device, the app signs in to Google Play Games Services automatically at startup, without a dialog of its own (provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, or Google LLC). In that case:</p>
 <ul>
   <li>your game progress (the data from section 3) is stored as a "Saved Game" on Google's servers, linked to your Google Play Games profile, so it survives a new or second device;</li>
   <li>the app reads the display name of your Play Games profile. It is held in memory only and is neither stored permanently nor shared with anyone.</li>
 </ul>
-<p>This cloud save is optional: without a Play Games profile the app runs fully offline and transmits no data at all. Needlepath has no leaderboards, achievements or any other data visible to third parties; the saved game is accessible to you alone.</p>
+<p><strong>Achievements</strong> belong to the same service: the game has eight achievements, all derived from your own progress (for example "all stars in one world"). If a Play Games profile is signed in, the app reports the unlock to Google and the achievement is stored in your Play Games profile. Unlike the saved game, an achievement is therefore also visible to your friends there, depending on the visibility settings of your Play Games profile. Those settings are managed at Google, not in the app. Needlepath has no leaderboards.</p>
+<p>Both are optional: without a Play Games profile the app runs fully offline, transmits neither progress nor achievements, and the locally stored game is accessible to you alone.</p>
 <p>You can delete saved games by removing the Play Games data or your Play Games profile in your Google account's data management (see Google's guide at <a href="https://support.google.com/googleplay/answer/6260245" rel="noopener">support.google.com/googleplay/answer/6260245</a>). Alternatively, a message to <a href="mailto:support@web-ascend.com">support@web-ascend.com</a> is sufficient; we will then assist you with the deletion.</p>
 
 <h2>5. Android device backup</h2>
 <p>The app permits Android device backups ("Auto Backup"). If you have enabled device backup to a Google account in your Android settings, Android may include the local game progress in that backup. This is controlled entirely by your device's backup settings.</p>
 
 <h2>6. Permissions</h2>
-<p>The app requests two Android permissions: <strong>Internet</strong> and <strong>Vibration</strong>. Internet is used exclusively for the cloud save described in section 4; without a signed-in Play Games profile the app makes no network connections. Vibration serves only the brief haptic feedback in the game (for instance on impact or when collecting a gem), can be switched off together with the sound in the app, and involves no data processing.</p>
+<p>The app requests four Android permissions:</p>
+<ul>
+  <li><strong>Internet</strong> – for the cloud save and achievements (section 4), for a requested rewarded ad (section 7) and for a purchase (section 8). If you use none of these, the app makes no network connections.</li>
+  <li><strong>Vibration</strong> – solely for the brief haptic feedback in the game (for instance on impact or when collecting a gem). It can be switched off together with the sound in the app and involves no data processing.</li>
+  <li><strong>Advertising ID</strong> (<code>com.google.android.gms.permission.AD_ID</code>) – required by the advertising SDK, see section 7.</li>
+  <li><strong>Billing</strong> (<code>com.android.vending.BILLING</code>) – required by Google Play Billing, see section 8.</li>
+</ul>
 
-<h2>7. No advertising, no analytics</h2>
-<p>The app contains no advertising SDKs, no analytics or tracking services and no third-party crash reporting services. No advertising ID is processed, and no usage profiles are created.</p>
+<h2>7. Advertising: rewarded ads on your request only</h2>
+<p>The app shows <strong>no advertising of its own accord</strong> – no banners, no ad on launch, none between levels. There is exactly one kind of ad: a <strong>rewarded ad</strong> that you can request yourself, after failing a level several times, in order to receive the hint earlier. If you would rather not watch an ad, the same help becomes available for free after a few more failed attempts; nothing is lost either way.</p>
+<p>These ads are served through <strong>Google AdMob</strong> (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, or Google LLC). When you request an ad, Google's advertising SDK processes in particular:</p>
+<ul>
+  <li>your device's <strong>advertising ID</strong> and comparable device identifiers;</li>
+  <li>your <strong>approximate location</strong>, derived from the IP address;</li>
+  <li><strong>interactions</strong> with the app and the ad;</li>
+  <li><strong>diagnostic data</strong> about the device and ad delivery.</li>
+</ul>
+<p>This data is collected by and shared with Google for advertising and marketing, analytics, and fraud prevention and security. Google acts as its own controller here. The app's operator receives no personal data from this, only aggregated billing figures.</p>
+<p><strong>Consent:</strong> In the European Economic Area and the United Kingdom, a consent dialog from Google's <em>User Messaging Platform</em> is shown on first launch. Without your consent the app requests no ad, and the help stays on the free route. Your decision is stored on the device. You can reset it by clearing the app data in the Android settings under <em>Apps → Needlepath → Storage → Clear data</em>; the dialog then reappears on the next launch. Please note that this also removes the local game progress (a game saved via Play Games is unaffected).</p>
+<p>The app is <strong>not directed at children</strong> and signals this to the advertising SDK explicitly (see also section 11). Transfers to third countries outside the EEA – in particular the USA – are possible; Google LLC is certified under the EU-U.S. Data Privacy Framework, for which an adequacy decision of the EU Commission under Art. 45 GDPR is in place. For details on how Google processes data in its advertising products, see <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
+<p>Beyond this, the app contains no analytics, tracking or crash reporting services, and the operator creates no usage profiles.</p>
 
-<h2>8. Legal bases (EU/EEA)</h2>
+<h2>8. Purchases in the app</h2>
+<p>Two one-time products can be bought in the app: an additional level pack, and a supporter pack that unlocks purely cosmetic colour themes. Both are optional, and both can also be earned without paying – by collecting a certain number of stars.</p>
+<p>Payment is handled entirely by <strong>Google Play Billing</strong> (Google Ireland Limited or Google LLC). The purchase takes place in a Google Play dialog, not in the app. The app receives <strong>no payment data</strong>: no card details, no name, no billing address and no order number. All it learns from Google Play is which of the two product identifiers you own, and it stores that locally on the device (section 3). The app's operator likewise sees no payment data, only the aggregated payouts in the Play Console.</p>
+<p>Google is the controller for the processing of your payment data; the <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google Payments privacy notice</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a> apply. Questions about refunds and purchase history are best addressed directly to Google Play.</p>
+
+<h2>9. Legal bases (EU/EEA)</h2>
 <p>For users in the European Economic Area:</p>
 <ul>
-  <li><strong>Cloud save via Google Play Games:</strong> processing is carried out to perform the user agreement or at your request (Art. 6(1)(b) GDPR) – it only takes place if a Play Games profile is set up on your device.</li>
+  <li><strong>Cloud save and achievements via Google Play Games:</strong> processing is carried out to perform the user agreement or at your request (Art. 6(1)(b) GDPR) – it only takes place if a Play Games profile is set up on your device.</li>
+  <li><strong>Rewarded ads (section 7):</strong> processing is based on your <strong>consent</strong> (Art. 6(1)(a) GDPR, and § 25(1) TDDDG for access to information on your device), obtained through the User Messaging Platform dialog. It can be withdrawn at any time with effect for the future; section 7 explains how.</li>
+  <li><strong>Purchases in the app (section 8):</strong> processing is carried out to perform the purchase contract (Art. 6(1)(b) GDPR); payment processing itself is Google's responsibility.</li>
   <li><strong>Provision of this website:</strong> processing is based on our legitimate interest (Art. 6(1)(f) GDPR), see section 2.</li>
 </ul>
 
-<h2>9. Recipients and third parties</h2>
-<p>The only recipient of the data described in section 4 is Google (Google Play Games Services). Google processes this data under its own privacy policy. Transfers to third countries outside the EEA – in particular the USA – are possible. Google LLC is certified under the EU-U.S. Data Privacy Framework, for which an adequacy decision of the EU Commission under Art. 45 GDPR is in place.</p>
+<h2>10. Recipients and third parties</h2>
+<p>In all three cases the recipient is Google – as Google Play Games Services (section 4), as AdMob (section 7) and as Google Play Billing (section 8). Google processes this data under its own privacy policy and is its own controller for the advertising and payment data. Advertisers and Google's advertising partners may also be involved in serving ads; which ones depends on your consent and is listed in the consent dialog. Transfers to third countries outside the EEA – in particular the USA – are possible. Google LLC is certified under the EU-U.S. Data Privacy Framework, for which an adequacy decision of the EU Commission under Art. 45 GDPR is in place.</p>
 <p>For more information, see Google's privacy policy at <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.</p>
-<p>Beyond that, no data is transmitted to, sold to or shared with third parties; the controller itself receives no personal data from the app.</p>
+<p>Beyond that, no data is transmitted to or sold to third parties; the controller itself receives no personal data from the app, only aggregated billing and statistical figures from Google.</p>
 
-<h2>10. Children</h2>
-<p>The app is aimed at a general audience and not specifically at children under 13. No personal data of children is knowingly collected; beyond the cloud save described above, no data processing takes place at all, and no advertising is served.</p>
+<h2>11. Children</h2>
+<p>The app is aimed at a general audience and not specifically at children under 13; in the Google Play Console it is registered accordingly for age groups from 13 upwards. The app explicitly signals to the advertising SDK that it is not directed at children, so no child-specific ad treatment applies. No personal data of children is knowingly collected.</p>
 <p>Parents and guardians who have reason to believe that their child has provided personal data can contact <a href="mailto:support@web-ascend.com">support@web-ascend.com</a> at any time. The data concerned will then be deleted.</p>
 
-<h2>11. Your rights</h2>
+<h2>12. Your rights</h2>
 <p>Within the scope of the law, you have the right to:</p>
 <ul>
   <li>access to the data processed about you</li>
@@ -119,22 +151,22 @@ Germany</p>
 <p>To exercise these rights, a message to <a href="mailto:support@web-ascend.com">support@web-ascend.com</a> is sufficient. Independently of this, you have the right to lodge a complaint with a data protection supervisory authority.</p>
 <p>Please note that data processed by Google as its own controller must be addressed directly to Google – most easily via your Google account's data management (see section 4).</p>
 
-<h2>12. Storage periods</h2>
-<p>Data stored locally on the device remains there until you uninstall the app or clear the app data. Saved games backed up via Google Play Games remain until you delete them (see section 4). The hosting server logs are subject to GitHub's retention periods.</p>
+<h2>13. Storage periods</h2>
+<p>Data stored locally on the device – game progress, settings, the identifiers of purchased products and your advertising consent – remains there until you uninstall the app or clear the app data. Saved games and achievements backed up via Google Play Games remain until you delete them (see section 4). Advertising and payment data are subject to Google's retention periods, the hosting server logs to GitHub's.</p>
 
-<h2>13. Data security</h2>
-<p>The app's communication with Google Play Games uses transport-encrypted connections (HTTPS/TLS). No server infrastructure of our own stores any users' personal data; this information page is served via GitHub Pages (see section 2).</p>
+<h2>14. Data security</h2>
+<p>The app's communication with Google – Play Games, AdMob and Google Play Billing – uses transport-encrypted connections (HTTPS/TLS). No server infrastructure of our own stores any users' personal data; this information page is served via GitHub Pages (see section 2).</p>
 
-<h2>14. Changes to this privacy policy</h2>
+<h2>15. Changes to this privacy policy</h2>
 <p>This privacy policy will be updated if the app or the underlying legal situation changes. The version published here applies. The current date is stated at the top of this page (2 September 2026).</p>
 
-<h2>15. Contact</h2>
+<h2>16. Contact</h2>
 <p>For questions about privacy in Needlepath, please contact:</p>
 <p>Jan Solga ("Web-Ascend") – operator of Needlepath<br>
 Kettelerstraße 42, 48147 Münster, Germany<br>
 Email: <a href="mailto:support@web-ascend.com">support@web-ascend.com</a></p>
 
-<footer>Needlepath · Privacy Policy · Last updated 2 September 2026 · <a href="impressum.html">Impressum (legal notice)</a> · <a href="index.html">Deutsch</a></footer>
+<footer>Needlepath · Privacy Policy · Last updated 12 September 2026 · <a href="impressum.html">Impressum (legal notice)</a> · <a href="index.html">Deutsch</a></footer>
 
 </main>
 </body>
